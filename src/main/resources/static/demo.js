@@ -45,7 +45,7 @@ Highcharts.chart('container', {
     },
 
     data: {
-        csvURL: 'http://localhost:8081/data/v1.0/analytic',
+        csvURL: '/data/v1.0/analytic',
         beforeParse: function (csv) {
             return csv.replace(/\n\n/g, '\n');
         }
